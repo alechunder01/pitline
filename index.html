@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Ikony -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Fonty -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+    <!-- Styly -->
+    <link rel="stylesheet" href="styles/mainstyle.css">
+    <link rel="stylesheet" href="styles/homepage.css">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <title>Pitline - Hlavní stránka</title>
+</head>
+<body>
+    <div class="menubutton">
+        <span class="material-symbols-outlined">menu</span>
+    </div>
+
+    <div class="menu">
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+    </div>
+
+    <div class="grid">
+
+        <section class="homesection1">
+
+            <div class="upper">
+                <h1>Pitline</h1>
+                <p>Vítejte na webu Pitline!</p>
+                <br>
+                <p>Najdete tu plno informací týkajících se Formule&nbsp;1. Kde se jezdí závody, jak se jmenují piloti nebo jak dlouhé jsou tratě to vše tady najdete.</p>
+            </div>
+            <div class="lower">
+                <a href="pages/zavody.html">
+                    <span class="material-symbols-outlined">sports_score</span>
+                    <p>Závody</p>
+                </a>
+                <a href="pages/tymy.html">
+                    <span class="material-symbols-outlined">sports_motorsports</span>
+                    <p>Týmy</p>
+                </a>
+                <a href="pages/2025.html">
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    <p>Sezóna 2025</p>
+                </a>
+                <a href="">
+                    <span class="material-symbols-outlined">history</span>
+                    <p>Minulost</p>
+                </a>
+            </div>
+
+            <div class="live">
+                <div class="livenadpis">
+                    <p>
+                        <span class="material-symbols-outlined" style="margin-right: 0.5rem">campaign</span>
+                        Nejbližší závod
+                    </p>
+                </div>
+                <div>
+                    <p>Example GrandPrix</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="mainpage3d">
+            <model-viewer src="images/3dmodel.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1" camera-orbit="-16.45deg 57.69deg 13.45m" field-of-view="22.86deg">
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    AR zobrazení
+                </button>
+            </model-viewer>
+            
+            
+            
+        </div>
+
+        
+        <footer>
+            <div class="footer-left">
+                <a href="index.html">Pitline.com</a>
+            </div>
+            <div class="footer-mid">
+                <a href="pages/zavody.html">Závody</a>
+                <a href="pages/tymy.html">Týmy</a>
+                <a href="pages/2025.html">Sezóna 2025</a>
+            </div>
+            <div class="footer-right">
+                <p>
+                    <span class="material-symbols-outlined">copyright</span>
+                    Alexandre Nicolas, 2025
+                </p>
+                <a href="">GitHub repositář</a>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>
