@@ -23,11 +23,20 @@
     z-index: 10;
     margin: 1vh 0 0 1vw;
     cursor: pointer;
+
+    
+}
+
+.menu.closed {
+  display: none;
+}
+
+.menu.open {
+  display: fixed;
 }
 
 .menu {
     position: fixed;
-    display: none;
     flex-direction: column;
     
     width: 10vw;
