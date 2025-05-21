@@ -21,17 +21,43 @@
     <title>Pitline - Závody</title>
 </head>
 <body>
-    <div class="menubutton">
+    <button id="menubutton" class="menubutton black" onclick="openMenu()">
         <span class="material-symbols-outlined">menu</span>
-    </div>
+      </button>
 
-    <div class="menu">
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
+    <div class="closed menu" id="menu">
+        <div class="links">
+            <a href="../index.html">
+                <span class="material-symbols-outlined">home</span>
+                <p>Domů</p>
+            </a>
+            <a href="zavody.html">
+                <span class="material-symbols-outlined">sports_score</span>
+                <p>Závody</p>
+            </a>
+            <a href="tymy.html">
+                <span class="material-symbols-outlined">sports_motorsports</span>
+                <p>Týmy</p>
+            </a>
+            <a href="2025.html">
+                <span class="material-symbols-outlined">calendar_today</span>
+                <p>Sezóna 2025</p>
+            </a>
+            <a href="history.html">
+                <span class="material-symbols-outlined">history</span>
+                <p>Minulost</p>
+            </a>
+        </div>
+        <div class="links2">
+            <a href="https://github.com/alechunder01/pitline">
+                <span class="material-symbols-outlined">docs</span>
+                <p>GitHub repositář</p>
+            </a>
+            <a href="">
+                <span class="material-symbols-outlined">policy_alert</span>
+                <p>GDPR</p>
+            </a>
+        </div>
     </div>
 
     <div class="grid">
@@ -43,19 +69,93 @@
                 <p>V této sekci najdete informace o okruzích kde se aktuálně jezdili Velké ceny Formulí 1.</p>
             </div>
             <div class="lower">
-                <a href="">
+                <a href="#oblibene">
                     <span class="material-symbols-outlined">favorite</span>
                     <p>Oblíbené</p>
                 </a>
                 <a href="">
                     <span class="material-symbols-outlined">history</span>
-                    <p>Historické</p>
+                    <p>Minulost</p>
                 </a>
                 <a href="">
-                    <span class="material-symbols-outlined">public</span>
-                    <p>Všechny</p>
+                    <span class="material-symbols-outlined">calendar_today</span>
+                    <p>Aktuální</p>
                 </a>
             </div>
+
+        </section>
+
+        <section class="oblibene">
+            <h2 id="oblibene">Oblíbené</h2>
+            <div class="favtop4">
+                <a class="fav link1">
+                    <div class="name">
+                        <p>Monza</p>
+                    </div>
+                </a>
+                <a class="fav link2">
+                    <div class="name">
+                        <p>Monaco</p>
+                    </div>
+                </a>
+                <a class="fav link3">
+                    <div class="name">
+                        <p>Spa-Francorchamps</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="minulost">
+            <h2>Minulost</h2>
+            <div class="bloky">
+                <div class="block block1">
+                    <img src="" alt="">
+                    <p class="name">Nürburgring Nordschleife</p>
+                    <p>Německo</p>
+                    <p>1951 - 1976</p>
+                    <p>Legendární „Zelené peklo“ v srdci německých hor. Více než 22 km dlouhý okruh plný nebezpečných zatáček a výškových rozdílů. Po těžké nehodě Niky Laudy byl vyřazen z kalendáře F1.</p>
+                </div>
+                <div class="block block1">
+                    <img src="" alt="">
+                    <p>Adelaide Street Circuit</p>
+                    <p>Austrálie</p>
+                    <p>1985 - 1995</p>
+                    <p>Městský okruh v ulicích Adelaide. Byl známý svou atmosférou a dramatickými závěry sezóny - např. havárie Mansella v roce 1986.</p>
+                </div>
+                <div class="block block1">
+                    <img src="" alt="">
+                    <p>Brands Hatch</p>
+                    <p>Velká Británie</p>
+                    <p>1964 - 1986</p>
+                    <p>Klasický britský okruh s přírodní kulisou a plynulými zatáčkami. Závodilo se tu i během období, kdy se britská GP střídala se Silverstonem.</p>
+                </div>
+                <div class="block block1">
+                    <img src="" alt="">
+                    <p>Watkins Glen</p>
+                    <p>Spojené Státy</p>
+                    <p>1961 - 1980</p>
+                    <p>Oblíbený americký okruh zasazený do zeleného prostředí. Rychlý a technický, ale nakonec příliš nebezpečný pro moderní F1.</p>
+                </div>
+                <div class="block block1">
+                    <img src="" alt="">
+                    <p>Long Beach</p>
+                    <p>Spojené státy</p>
+                    <p>1976 - 1983</p>
+                    <p>Ulice Kalifornie přetvořené na závodní trať - americké „Monako“. Palmami lemovaný okruh nabízel napětí a styl, ale F1 ho nakonec opustila kvůli nákladům.</p>
+                </div>
+                <div class="block block1">
+                    <img src="" alt="">
+                    <p>Pescara Circuit</p>
+                    <p>Itálie</p>
+                    <p>1957</p>
+                    <p>Nejdelší trať v historii F1 - 25,8 km po běžných silnicích. Krásná, ale extrémně nebezpečná. Byl to doslova závod přes vesnice a hory.</p>
+                </div>
+            </div>
+            
+        </section>
+
+        <section>
 
         </section>
 
@@ -73,10 +173,11 @@
                     <span class="material-symbols-outlined">copyright</span>
                     Alexandre Nicolas, 2025
                 </p>
-                <a href="">GitHub repositář</a>
+                <a href="https://github.com/alechunder01/pitline">GitHub repositář</a>
             </div>
         </footer>
 
     </div>
+    <script src="../scripts/menuopener.js"></script>
 </body>
 </html>
