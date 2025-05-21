@@ -6,7 +6,7 @@
 
     <!-- Ikony -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
-
+    
     <!-- Fonty -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,17 +22,43 @@
     <title>Pitline - Hlavní stránka</title>
 </head>
 <body>
-    <button class="menubutton" onclick="openMenu()">
+    <button id="menubutton" class="menubutton black" onclick="openMenu()">
         <span class="material-symbols-outlined">menu</span>
-    </button>
+      </button>
 
     <div class="closed menu" id="menu">
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
-        <a href="">link</a>
+        <div class="links">
+            <a href="index.html">
+                <span class="material-symbols-outlined">home</span>
+                <p>Domů</p>
+            </a>
+            <a href="pages/zavody.html">
+                <span class="material-symbols-outlined">sports_score</span>
+                <p>Závody</p>
+            </a>
+            <a href="pages/tymy.html">
+                <span class="material-symbols-outlined">sports_motorsports</span>
+                <p>Týmy</p>
+            </a>
+            <a href="pages/2025.html">
+                <span class="material-symbols-outlined">calendar_today</span>
+                <p>Sezóna 2025</p>
+            </a>
+            <a href="pages/history.html">
+                <span class="material-symbols-outlined">history</span>
+                <p>Minulost</p>
+            </a>
+        </div>
+        <div class="links2">
+            <a href="https://github.com/alechunder01/pitline">
+                <span class="material-symbols-outlined">docs</span>
+                <p>GitHub repositář</p>
+            </a>
+            <a href="">
+                <span class="material-symbols-outlined">policy_alert</span>
+                <p>GDPR</p>
+            </a>
+        </div>
     </div>
 
     <div class="grid">
@@ -108,7 +134,7 @@
                     <span class="material-symbols-outlined">copyright</span>
                     Alexandre Nicolas, 2025
                 </p>
-                <a href="">GitHub repositář</a>
+                <a href="https://github.com/alechunder01/pitline">GitHub repositář</a>
             </div>
         </footer>
 
