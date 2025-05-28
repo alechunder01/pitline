@@ -78,6 +78,16 @@
     margin-bottom: 1rem;
 }
 
+.live #race-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 2vh;
+}
+
+.live #record {
+    margin-top: 2vh;
+}
+
 /* 3D model */
 
 .mainpage3d {
