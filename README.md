@@ -13,6 +13,7 @@ Zjednodušit přístup k informacím o Formuli 1, vytvořit moderní a přehledn
 - [Pinterest](https://cz.pinterest.com/) - inspirace
 - [Google fonts](https://fonts.google.com/) - fonty a ikonky
 - [Uiverse](https://uiverse.io/) - některé UI elementy
+- https://f1api.dev/api/current/next api
 
 
 ## 🚧 To-Do

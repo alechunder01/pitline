@@ -12,7 +12,15 @@ fetch('https://f1api.dev/api/current/next')
     const circuitLengthRaw = race?.circuit?.circuitLength;
 
     const recordTime = race?.circuit?.lapRecord;
-    const recordDriver = race?.circuit?.fastestLapDriverId;
+    let recordDriver = race?.circuit?.fastestLapDriverId;
+
+    // Úprava jména jezdce: pomlčka na mezeru, první písmena velká
+    if (recordDriver) {
+      recordDriver = recordDriver
+        .split('_')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(' ');
+    }
 
     // 🧮 Převod délky z metrů na km
     let circuitLengthKm = 'Neznámá délka';
@@ -37,12 +45,10 @@ fetch('https://f1api.dev/api/current/next')
     }
 
     document.getElementById('race-name').textContent = `${raceName}`;
-    document.getElementById('race-info').textContent = `Závod se pojede ${formattedDateTime}.`;
-    document.getElementById('circuit-info').textContent = `Pojede se ${circuitLaps} kol na ${circuitLengthKm} dlouhém okruhu ${circuitName}.`;
-    document.getElementById('record').textContent = `Rekordní čás je ${recordTime} a zajel ho ${recordDriver}.`;
+    document.getElementById('race-info').textContent = `Čas: ${formattedDateTime}.`;
+    document.getElementById('circuit-name').textContent = `Okruh: ${circuitName}`;
+    document.getElementById('circuit-laps').textContent = `Počet kol: ${circuitLaps}`;
+    document.getElementById('circuit-length').textContent = `Délka kola: ${circuitLengthKm}`;
+    document.getElementById('record-driver').textContent = `Držitel rekordu: ${recordDriver}`;
+    document.getElementById('record-time').textContent = `Nejrychlejší kolo: ${recordTime}`;
   })
-  .catch(error => {
-    console.error('Chyba při načítání:', error);
-    document.getElementById('race-name').textContent = 'Chyba při načítání názvu závodu.';
-    document.getElementById('race-info').textContent = 'Chyba při načítání data závodu.';
-  });
