@@ -12,6 +12,7 @@
 
 html, body {
     overflow-x: hidden;
+    background-color: white;
 }
 
 .material-symbols-outlined {
