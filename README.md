@@ -13,12 +13,10 @@ Zjednodušit přístup k informacím o Formuli 1, vytvořit moderní a přehledn
 - [Pinterest](https://cz.pinterest.com/) - inspirace
 - [Google fonts](https://fonts.google.com/) - fonty a ikonky
 - [Uiverse](https://uiverse.io/) - některé UI elementy
-- https://f1api.dev/api/current/next api
-
+- [F1api](https://f1api.dev/api/current/next) - live data
 
 ## 🚧 To-Do
 
-- [ ] Zprovoznit dynamické načítání dat o závodech
-- [ ] Přidat stránku pro jednotlivé jezdce
+- [x] Zprovoznit dynamické načítání dat o závodech
 - [ ] Optimalizace pro mobilní zařízení
-- [ ] Překlad do EN (vícejazyčnost)
+- [ ] Responzivita
