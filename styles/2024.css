@@ -41,8 +41,7 @@ section {
 .homesection1 .lower {
     display: grid;
     grid-template-columns: repeat(2, 30%);
-    grid-template-rows: repeat(2, 50%);
-    row-gap: 15%;
+
     column-gap: 3%;
 }
 
