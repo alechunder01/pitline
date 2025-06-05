@@ -45,7 +45,7 @@ fetch('https://f1api.dev/api/current/next')
     }
 
     document.getElementById('race-name').textContent = `${raceName}`;
-    document.getElementById('race-info').textContent = `Čas: ${formattedDateTime}.`;
+    document.getElementById('race-info').textContent = `Čas: ${formattedDateTime}`;
     document.getElementById('circuit-name').textContent = `Okruh: ${circuitName}`;
     document.getElementById('circuit-laps').textContent = `Počet kol: ${circuitLaps}`;
     document.getElementById('circuit-length').textContent = `Délka kola: ${circuitLengthKm}`;
