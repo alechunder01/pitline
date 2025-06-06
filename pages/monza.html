@@ -1,168 +1,302 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Ikony -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
 
     <!-- Fonty -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Styly -->
-    <link rel="stylesheet" href="../styles/mainstyle.css">
-    <link rel="stylesheet" href="../styles/raceinfopage.css">
+    <link rel="stylesheet" href="../styles/mainstyle.css" />
+    <link rel="stylesheet" href="../styles/raceinfopage.css" />
 
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
 
     <title>Pitline - Monza</title>
-</head>
-<body>
+  </head>
+  <body>
     <button id="menubutton" class="menubutton black" onclick="openMenu()">
-        <span class="material-symbols-outlined">menu</span>
-      </button>
+      <span class="material-symbols-outlined">menu</span>
+    </button>
 
     <div class="closed menu" id="menu">
-        <div class="links">
-            <a href="../index.html">
-                <span class="material-symbols-outlined">home</span>
-                <p>Domů</p>
-            </a>
-            <a href="zavody.html">
-                <span class="material-symbols-outlined">sports_score</span>
-                <p>Závody</p>
-            </a>
-            <a href="2024.html">
-                <span class="material-symbols-outlined">sports_motorsports</span>
-                <p>2024</p>
-            </a>
-            <a href="history.html">
-                <span class="material-symbols-outlined">history</span>
-                <p>Minulost</p>
-            </a>
-        </div>
-        <div class="links2">
-            <a href="https://github.com/alechunder01/pitline">
-                <span class="material-symbols-outlined">docs</span>
-                <p>GitHub repositář</p>
-            </a>
-            <a href="">
-                <span class="material-symbols-outlined">policy_alert</span>
-                <p>GDPR</p>
-            </a>
-        </div>
+      <div class="links">
+        <a href="../index.html">
+          <span class="material-symbols-outlined">home</span>
+          <p>Domů</p>
+        </a>
+        <a href="zavody.html">
+          <span class="material-symbols-outlined">sports_score</span>
+          <p>Závody</p>
+        </a>
+        <a href="2024.html">
+          <span class="material-symbols-outlined">sports_motorsports</span>
+          <p>2024</p>
+        </a>
+        <a href="history.html">
+          <span class="material-symbols-outlined">history</span>
+          <p>Minulost</p>
+        </a>
+      </div>
+      <div class="links2">
+        <a href="https://github.com/alechunder01/pitline">
+          <span class="material-symbols-outlined">docs</span>
+          <p>GitHub repositář</p>
+        </a>
+        <a href="">
+          <span class="material-symbols-outlined">policy_alert</span>
+          <p>GDPR</p>
+        </a>
+      </div>
     </div>
 
     <div class="grid">
-
-        <section class="homesection1">
-            <div class="upper">
-                <h1>Monza</h1>
-                <p>Zde najdete informace o Velké ceně Itálie na okruhu Monza.</p>
-            </div>
-            <div class="lower">
-                <a href="#info">
-                    <span class="material-symbols-outlined">info</span>
-                    <p>Informace</p>
-                </a>
-                <a href="#stats">
-                    <span class="material-symbols-outlined">leaderboard</span>
-                    <p>Výsledky</p>
-                </a>
-                <a href="#minulost">
-                    <span class="material-symbols-outlined">calendar_today</span>
-                    <p>Momenty z minulosti</p>
-                </a>
-            </div>
-        </section>
-
-        <div class="map">
-            <img src="/images/mapy/Italy_Circuit.avif" alt="monza map">
+      <section class="homesection1">
+        <div class="upper">
+          <h1>Monza</h1>
+          <p>Zde najdete informace o Velké ceně Itálie na okruhu Monza.</p>
         </div>
+        <div class="lower">
+          <a href="#info">
+            <span class="material-symbols-outlined">info</span>
+            <p>Informace</p>
+          </a>
+          <a href="#stats">
+            <span class="material-symbols-outlined">leaderboard</span>
+            <p>Výsledky</p>
+          </a>
+          <a href="#minulost">
+            <span class="material-symbols-outlined">calendar_today</span>
+            <p>Momenty z minulosti</p>
+          </a>
+        </div>
+      </section>
 
-        <section class="info">
-            <h2 id="info">Informace</h2>
-            <div class="innerinfo">
-                <div class="left">
+      <div class="map">
+        <img src="/images/mapy/Italy_Circuit.avif" alt="monza map" />
+      </div>
 
-                    <p>
-                        Autodrom Monza je jedním z nejikoničtějších a nejrychlejších okruhů ve světě Formule 1. Nachází se v Itálii, nedaleko Milána, a poprvé hostil závod už v roce 1922. Díky dlouhým rovinkám a několika ostrým šikanám si vysloužil přezdívku „Chrám rychlosti“. Patří mezi nejtradičnější zastávky F1 a bývá dějištěm dramatických závodů s těsnými dojezdy.
-                    </p>
+      <section class="info">
+        <h2 id="info">Informace</h2>
+        <div class="innerinfo">
+          <div class="left">
+            <p>
+              Autodrom Monza je jedním z nejlegendárnějších a nejrychlejších
+              okruhů ve světě Formule 1.
+            </p>
+            <p>
+              Nachází se nedaleko Milána a je známý dlouhými rovinkami, vysokými
+              rychlostmi a technicky náročnými zatáčkami, které představují
+              výzvu pro jezdce i týmy.
+            </p>
+            <p>
+              Díky své bohaté historii a charakteristickému uspořádání si Monza
+              vysloužila přezdívku <em>Chrám rychlosti</em>.
+            </p>
+            <p>
+              Neodmyslitelnou součástí závodního víkendu jsou i vášniví italští
+              fanoušci, kteří vytvářejí jedinečnou atmosféru.
+            </p>
+            <p>
+              Monza je místem, kde se rodí dramatické momenty i nezapomenutelné
+              závody.
+            </p>
+          </div>
+          <div class="right">
+            <div class="gridinfo">
+              <div class="label">
+                <span class="material-symbols-outlined">autorenew</span>
+                Délka okruhu
+              </div>
+              <div class="value">5,793 km</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">laps</span>
+                Počet kol
+              </div>
+              <div class="value">53</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">straighten</span>
+                Celková délka
+              </div>
+              <div class="value">306,72 km</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">schedule</span>
+                První Grand Prix
+              </div>
+              <div class="value">1922</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">location_on</span>
+                Umístění
+              </div>
+              <div class="value">Monza, Itálie</div>
+            </div>
+          </div>
+        </div>
+        <div class="downinfo">
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12529.149699512462!2d9.287813653022647!3d45.61966888062254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786ba360e48bd7d%3A0x645e7ef5a9d3a632!2sAutodromo%20Nazionale%20Monza!5e0!3m2!1scs!2scz!4v1749199762462!5m2!1scs!2scz"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="../images/race/monza/monza1.jpg" style="height: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="../images/race/monza/monza2.jpg" style="height: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="../images/race/monza/monza3.jpg" style="height: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="../images/race/monza/monza4.jpg" style="height: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 5</div>
+                <img src="../images/race/monza/monza5.jpg" style="height: 100%" />
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats">
+        <h2 id="stats">Výsledky</h2>
+        <div class="vysledkygrid">
+            <div class="rok">
+                <p class="date">2024</p>
+                <div class="podium">
+                    <p><span class="pozice">1.</span> Charles Leclerc (Ferrari)</p>
+                    <p><span class="pozice">2.</span> Oscar Piastri (McLaren)</p>
+                    <p><span class="pozice">3.</span> Lando Norris (McLaren)</p>
                 </div>
-                <div class="right">
-                    <div class="gridinfo">
-                        <div class="label">
-                            <span class="material-symbols-outlined">autorenew</span>
-                            Délka okruhu
-                        </div>
-                        <div class="value">5,793 km</div>
-                        
-                        <div class="label">
-                            <span class="material-symbols-outlined">laps</span>
-                            Počet kol
-                        </div>
-                        <div class="value">53</div>
-                        
-                        <div class="label">
-                            <span class="material-symbols-outlined">straighten</span>
-                            Celková délka
-                        </div>
-                        <div class="value">306,72 km</div>
-                        
-                        <div class="label">
-                            <span class="material-symbols-outlined">schedule</span>
-                            První Grand Prix
-                        </div>
-                        <div class="value">1922</div>
-                        
-                        <div class="label">
-                            <span class="material-symbols-outlined">location_on</span>
-                            Umístění
-                        </div>
-                        <div class="value">Monza, Itálie</div>
-                    </div>
+            </div>
+            <div class="rok">
+                <p class="date">2023</p>
+                <div class="podium">
+                    <p><span class="pozice">1.</span> Max Verstappen (Red Bull)</p>
+                    <p><span class="pozice">2.</span> Sergio Pérez (Red Bull)</p>
+                    <p><span class="pozice">3.</span> Carlos Sainz (Ferrari)</p>
                 </div>
             </div>
-            <div class="downinfo">
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13154.970280043406!2d9.287078484828632!3d45.62236679115112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1scs!2scz!4v1749188887081!5m2!1scs!2scz"style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="rok">
+                <p class="date">2022</p>
+                <div class="podium">
+                    <p><span class="pozice">1.</span> Max Verstappen (Red Bull)</p>
+                    <p><span class="pozice">2.</span> Charles Leclerc (Ferrari)</p>
+                    <p><span class="pozice">3.</span> Lando Norris (McLaren)</p>
                 </div>
-                <div class="images">
-                    <img src="images/" alt="a photo a monza" class="activeimage">
+            </div>
+            <div class="rok">
+                <p class="date">2021</p>
+                <div class="podium">
+                    <p><span class="pozice">1.</span> Daniel Ricciardo (McLaren)</p>
+                    <p><span class="pozice">2.</span> Lando Norris (McLaren)</p>
+                    <p><span class="pozice">3.</span> Valtteri Bottas (Mercedes)</p>
                 </div>
             </div>
-        </section>
-
-        <section class="stats">
-            <h2 id="stats">Výsledky</h2>
-        </section>
-
-        <section class="minulost">
-            <h2 id="minulost">Momenty z minulosti</h2>
-        </section>
-
-        <footer>
-            <div class="footer-left">
-                <a href="../index.html">Pitline.com</a>
+            <div class="rok">
+                <p class="date">2020</p>
+                <div class="podium">
+                    <p><span class="pozice">1.</span> Lewis Hamilton (Mercedes)</p>
+                    <p><span class="pozice">2.</span> Valtteri Bottas (Mercedes)</p>
+                    <p><span class="pozice">3.</span> Max Verstappen (Red Bull)</p>
+                </div>
             </div>
-            <div class="footer-mid">
-                <a href="zavody.html">Závody</a>
-                <a href="tymy.html">Týmy</a>
-                <a href="2025.html">Sezóna 2025</a>
+            <div class="rok">
+                <p class="date">2019</p>
+                <div class="podium">
+                    <p><span class="pozice">1.</span> Charles Leclerc (Ferrari)</p>
+                    <p><span class="pozice">2.</span> Valtteri Bottas (Mercedes)</p>
+                    <p><span class="pozice">3.</span> Lewis Hamilton (Mercedes)</p>
+                </div>
             </div>
-            <div class="footer-right">
-                <p>
-                    <span class="material-symbols-outlined">copyright</span>
-                    Alexandre Nicolas, 2025
-                </p>
-                <a href="https://github.com/alechunder01/pitline">GitHub repositář</a>
+            <div class="rok">
+                <p class="date">2018</p>
+                <div class="podium">
+                    <p><span class="pozice">1.</span> Lewis Hamilton (Mercedes)</p>
+                    <p><span class="pozice">2.</span> Kimi Räikkönen (Ferrari)</p>
+                    <p><span class="pozice">3.</span> Valtteri Bottas (Mercedes)</p>
+                </div>
             </div>
-        </footer>
+            <div class="rok">
+                <p class="date">2017</p>
+                <div class="podium">
+                    <p><span class="pozice">1.</span> Sebastian Vettel (Ferrari)</p>
+                    <p><span class="pozice">2.</span> Max Verstappen (Red Bull)</p>
+                    <p><span class="pozice">3.</span> Kimi Räikkönen (Ferrari)</p>
+                </div>
+            </div>
+            <div class="rok">
+                <p class="date">2016</p>
+                <div class="podium">
+                    <p><span class="pozice">1.</span> Nico Rosberg (Mercedes)</p>
+                    <p><span class="pozice">2.</span> Lewis Hamilton (Mercedes)</p>
+                    <p><span class="pozice">3.</span> Sebastian Vettel (Ferrari)</p>
+                </div>
+            </div>
+        </div>
+      </section>
 
+      <section class="minulost">
+        <h2 id="minulost">Momenty z minulosti</h2>
+      </section>
+
+      <footer>
+        <div class="footer-left">
+          <a href="../index.html">Pitline.com</a>
+        </div>
+        <div class="footer-mid">
+          <a href="zavody.html">Závody</a>
+          <a href="tymy.html">Týmy</a>
+          <a href="2025.html">Sezóna 2025</a>
+        </div>
+        <div class="footer-right">
+          <p>
+            <span class="material-symbols-outlined">copyright</span>
+            Alexandre Nicolas, 2025
+          </p>
+          <a href="https://github.com/alechunder01/pitline">GitHub repositář</a>
+        </div>
+      </footer>
     </div>
     <script src="../scripts/menuopener.js"></script>
-</body>
+    <script src="../scripts/imagechanger.js"></script>
+  </body>
 </html>
