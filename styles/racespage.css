@@ -105,6 +105,8 @@ h2 {
     background-position: center;
     transition: all 0.15s ease-in-out;
     cursor: pointer;
+    text-decoration: none;
+    color: black;
 }
 
 .favtop4 a.link1 {
