@@ -1,0 +1,235 @@
+.grid {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 100vw;
+    grid-template-rows: auto auto auto auto 25vh;
+    grid-template-columns: 55% 45%;
+    grid-auto-flow: row;
+    overflow: hidden;
+}
+
+footer {
+    grid-row: 5;
+    grid-column: 1/3;
+}
+
+section {
+    margin: 5vh 10vw;
+}
+
+/* Section1 */
+
+.homesection1 {
+    margin-top: 0;
+    grid-row: 1;
+    grid-column: 1/3;
+    width: 50%;
+}
+
+.homesection1 .upper {
+    margin: 15vh 0 5% 0;
+}
+
+.homesection1 .upper h1 {
+    font-size: 3.5rem;
+    margin-bottom: 3vh;
+}
+
+.homesection1 .upper p {
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.homesection1 .lower {
+    display: grid;
+    grid-template-columns: repeat(2, 30%);
+    grid-template-rows: repeat(2, 50%);
+    row-gap: 15%;
+    column-gap: 3%;
+}
+
+.homesection1 .lower a {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+
+.homesection1 .lower a:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+.homesection1 .lower a:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+}
+
+section {
+    grid-column: 1/3;
+}
+
+.info {
+    grid-column: 1/3;
+    font-size: 1.2rem;
+}
+
+.innerinfo {
+    display: grid;
+    grid-template-columns: 60% 35%;
+    grid-template-rows: 40vh;
+    column-gap: 5%;
+}
+
+.innerinfo>div {
+    border: solid #000 1px;
+    border-radius: 2em;
+}
+
+.innerinfo .left {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding: 2vh 2vw;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerinfo p {
+    margin-bottom: 1vh;
+}
+
+.innerinfo .right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1vh 2vw 1vh 0.5vw;
+}
+
+.innerinfo .gridinfo {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    column-gap: 1vw;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.gridinfo .label, .gridinfo .value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridinfo .label .material-symbols-outlined {
+    font-size: 1.5rem;
+    margin-right: 0.5vw;
+}
+
+.innerfotovideo {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 40vh;
+    column-gap: 5%;
+}
+
+.innerfotovideo .video {
+    border: solid #000 1px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+.slideshow-container {
+    position: relative;
+    border: #000 1px solid;
+    border-radius: 2em;
+    overflow: hidden;
+  }
+  
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.mySlides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .topvideo {
+    overflow: hidden;
+    border: solid #000 1px;
+    border-radius: 2em;
+    position: relative;
+  }
+
+  .topvideo p{
+    position: absolute;
+    z-index: 5;
+    color: white;
+  }
+
+  .topvideo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }

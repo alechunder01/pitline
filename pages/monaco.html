@@ -18,6 +18,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+
     <!-- Styly -->
     <link rel="stylesheet" href="../styles/mainstyle.css" />
     <link rel="stylesheet" href="../styles/raceinfopage.css" />
@@ -26,13 +31,94 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-10NKG4WQ5T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-10NKG4WQ5T");
+    </script>
 
     <title>Pitline - Monako</title>
   </head>
   <body>
-    <button id="menubutton" class="menubutton black" onclick="openMenu()">
-      <span class="material-symbols-outlined">menu</span>
-    </button>
+    <div class="staticbuttons">
+      <button
+        id="menubutton"
+        class="menubutton black instatic"
+        onclick="openMenu()"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="../index.html" class="homebutton instatic">
+        <span class="material-symbols-outlined">home</span>
+        <p>Domů</p>
+      </a>
+    </div>
+
+    <div class="closed menu" id="menu">
+      <div class="links">
+        <a href="zavody.html">
+          <span class="material-symbols-outlined">sports_score</span>
+          <p>Závody</p>
+        </a>
+        <a href="2024.html">
+          <span class="material-symbols-outlined">calendar_today</span>
+          <p>Sezóna 2024</p>
+        </a>
+      </div>
+
+      <div class="linksmid1">
+        <p class="menutext">Závody</p>
+        <a href="monza.html">
+          <span class="fi fi-it"></span>
+          <p>Monza</p>
+        </a>
+        <a href="spa.html">
+          <span class="fi fi-be"></span>
+          <p>Spa Francorshamp</p> </a
+        ><a href="monaco.html">
+          <span class="fi fi-mc"></span>
+          <p>Monaco</p>
+        </a>
+      </div>
+
+      <div class="linksmid2">
+        <p class="menutext">Piloti</p>
+        <a href="max.html">
+          <span class="fi fi-nl"></span>
+          <p>Max Verstappen</p> </a
+        ><a href="lando.html">
+          <span class="fi fi-gb"></span>
+          <p>Lando Norris</p> </a
+        ><a href="leclerc.html">
+          <span class="fi fi-mc"></span>
+          <p>Charles Leclerc</p>
+        </a>
+      </div>
+
+      <div class="links2">
+        <p class="menutext">Ostatní</p>
+        <a href="https://github.com/alechunder01/pitline">
+          <span class="material-symbols-outlined">docs</span>
+          <p>GitHub repositář</p>
+        </a>
+        <a href="onas.html">
+          <span class="material-symbols-outlined">account_circle</span>
+          <p>O mě</p>
+        </a>
+        <a href="gdpr.html">
+          <span class="material-symbols-outlined">policy_alert</span>
+          <p>GDPR</p>
+        </a>
+      </div>
+    </div>
 
     <div class="closed menu" id="menu">
       <div class="links">
@@ -44,9 +130,13 @@
           <span class="material-symbols-outlined">sports_score</span>
           <p>Závody</p>
         </a>
-        <a href="2024.html">
+        <a href="tymy.html">
           <span class="material-symbols-outlined">sports_motorsports</span>
-          <p>2024</p>
+          <p>Týmy</p>
+        </a>
+        <a href="2025.html">
+          <span class="material-symbols-outlined">calendar_today</span>
+          <p>Sezóna 2025</p>
         </a>
         <a href="history.html">
           <span class="material-symbols-outlined">history</span>
@@ -79,10 +169,6 @@
           <a href="#stats">
             <span class="material-symbols-outlined">leaderboard</span>
             <p>Výsledky</p>
-          </a>
-          <a href="#minulost">
-            <span class="material-symbols-outlined">calendar_today</span>
-            <p>Momenty z minulosti</p>
           </a>
         </div>
       </section>
@@ -124,6 +210,12 @@
                 Délka okruhu
               </div>
               <div class="value">3,337 km</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">timer</span>
+                Nejrychlejší kolo
+              </div>
+              <div class="value">1:12.909</div>
 
               <div class="label">
                 <span class="material-symbols-outlined">laps</span>
@@ -189,7 +281,7 @@
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 5</div>
+              <div class="numbertext">4 / 5</div>
               <img
                 src="../images/race/monaco/monaco4.jpg"
                 style="height: 100%"
@@ -197,7 +289,7 @@
             </div>
 
             <div class="mySlides fade">
-              <div class="numbertext">3 / 5</div>
+              <div class="numbertext">5 / 5</div>
               <img
                 src="../images/race/monaco/monaco5.jpg"
                 style="height: 100%"
@@ -289,18 +381,13 @@
         </div>
       </section>
 
-      <section class="minulost">
-        <h2 id="minulost">Momenty z minulosti</h2>
-      </section>
-
       <footer>
         <div class="footer-left">
           <a href="../index.html">Pitline.com</a>
         </div>
         <div class="footer-mid">
           <a href="zavody.html">Závody</a>
-          <a href="tymy.html">Týmy</a>
-          <a href="2025.html">Sezóna 2025</a>
+          <a href="2024.html">Sezóna 2024</a>
         </div>
         <div class="footer-right">
           <p>

@@ -91,7 +91,6 @@ h2 {
 
 .map img {
     width: 80%;
-    ali
 }
 
 section {
@@ -145,6 +144,7 @@ section {
     column-gap: 1vw;
     width: 100%;
     height: 100%;
+    text-align: center;
 }
 
 .gridinfo .label, .gridinfo .value {

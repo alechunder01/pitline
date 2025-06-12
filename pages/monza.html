@@ -18,6 +18,11 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+
     <!-- Styly -->
     <link rel="stylesheet" href="../styles/mainstyle.css" />
     <link rel="stylesheet" href="../styles/raceinfopage.css" />
@@ -26,39 +31,89 @@
       type="module"
       src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
     ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-10NKG4WQ5T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-10NKG4WQ5T");
+    </script>
 
     <title>Pitline - Monza</title>
   </head>
   <body>
-    <button id="menubutton" class="menubutton black" onclick="openMenu()">
-      <span class="material-symbols-outlined">menu</span>
-    </button>
+    <div class="staticbuttons">
+      <button
+        id="menubutton"
+        class="menubutton black instatic"
+        onclick="openMenu()"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="../index.html" class="homebutton instatic">
+        <span class="material-symbols-outlined">home</span>
+        <p>Domů</p>
+      </a>
+    </div>
 
     <div class="closed menu" id="menu">
       <div class="links">
-        <a href="../index.html">
-          <span class="material-symbols-outlined">home</span>
-          <p>Domů</p>
-        </a>
         <a href="zavody.html">
           <span class="material-symbols-outlined">sports_score</span>
           <p>Závody</p>
         </a>
         <a href="2024.html">
-          <span class="material-symbols-outlined">sports_motorsports</span>
-          <p>2024</p>
-        </a>
-        <a href="history.html">
-          <span class="material-symbols-outlined">history</span>
-          <p>Minulost</p>
+          <span class="material-symbols-outlined">calendar_today</span>
+          <p>Sezóna 2024</p>
         </a>
       </div>
+
+      <div class="linksmid1">
+        <p class="menutext">Závody</p>
+        <a href="monza.html">
+          <span class="fi fi-it"></span>
+          <p>Monza</p>
+        </a>
+        <a href="spa.html">
+          <span class="fi fi-be"></span>
+          <p>Spa Francorshamp</p> </a
+        ><a href="monaco.html">
+          <span class="fi fi-mc"></span>
+          <p>Monaco</p>
+        </a>
+      </div>
+
+      <div class="linksmid2">
+        <p class="menutext">Piloti</p>
+        <a href="max.html">
+          <span class="fi fi-nl"></span>
+          <p>Max Verstappen</p> </a
+        ><a href="lando.html">
+          <span class="fi fi-gb"></span>
+          <p>Lando Norris</p> </a
+        ><a href="leclerc.html">
+          <span class="fi fi-mc"></span>
+          <p>Charles Leclerc</p>
+        </a>
+      </div>
+
       <div class="links2">
+        <p class="menutext">Ostatní</p>
         <a href="https://github.com/alechunder01/pitline">
           <span class="material-symbols-outlined">docs</span>
           <p>GitHub repositář</p>
         </a>
-        <a href="">
+        <a href="onas.html">
+          <span class="material-symbols-outlined">account_circle</span>
+          <p>O mě</p>
+        </a>
+        <a href="gdpr.html">
           <span class="material-symbols-outlined">policy_alert</span>
           <p>GDPR</p>
         </a>
@@ -79,10 +134,6 @@
           <a href="#stats">
             <span class="material-symbols-outlined">leaderboard</span>
             <p>Výsledky</p>
-          </a>
-          <a href="#minulost">
-            <span class="material-symbols-outlined">calendar_today</span>
-            <p>Momenty z minulosti</p>
           </a>
         </div>
       </section>
@@ -124,6 +175,12 @@
                 Délka okruhu
               </div>
               <div class="value">5,793 km</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">timer</span>
+                Nejrychlejší kolo
+              </div>
+              <div class="value">1:21.046</div>
 
               <div class="label">
                 <span class="material-symbols-outlined">laps</span>
@@ -180,13 +237,13 @@
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3 / 5</div>
-                <img src="../images/race/monza/monza4.jpg" style="height: 100%" />
+              <div class="numbertext">4 / 5</div>
+              <img src="../images/race/monza/monza4.jpg" style="height: 100%" />
             </div>
 
             <div class="mySlides fade">
-                <div class="numbertext">3 / 5</div>
-                <img src="../images/race/monza/monza5.jpg" style="height: 100%" />
+              <div class="numbertext">5 / 5</div>
+              <img src="../images/race/monza/monza5.jpg" style="height: 100%" />
             </div>
 
             <!-- Next and previous buttons -->
@@ -199,83 +256,79 @@
       <section class="stats">
         <h2 id="stats">Výsledky</h2>
         <div class="vysledkygrid">
-            <div class="rok">
-                <p class="date">2024</p>
-                <div class="podium">
-                    <p><span class="pozice">1.</span> Charles Leclerc (Ferrari)</p>
-                    <p><span class="pozice">2.</span> Oscar Piastri (McLaren)</p>
-                    <p><span class="pozice">3.</span> Lando Norris (McLaren)</p>
-                </div>
+          <div class="rok">
+            <p class="date">2024</p>
+            <div class="podium">
+              <p><span class="pozice">1.</span> Charles Leclerc (Ferrari)</p>
+              <p><span class="pozice">2.</span> Oscar Piastri (McLaren)</p>
+              <p><span class="pozice">3.</span> Lando Norris (McLaren)</p>
             </div>
-            <div class="rok">
-                <p class="date">2023</p>
-                <div class="podium">
-                    <p><span class="pozice">1.</span> Max Verstappen (Red Bull)</p>
-                    <p><span class="pozice">2.</span> Sergio Pérez (Red Bull)</p>
-                    <p><span class="pozice">3.</span> Carlos Sainz (Ferrari)</p>
-                </div>
+          </div>
+          <div class="rok">
+            <p class="date">2023</p>
+            <div class="podium">
+              <p><span class="pozice">1.</span> Max Verstappen (Red Bull)</p>
+              <p><span class="pozice">2.</span> Sergio Pérez (Red Bull)</p>
+              <p><span class="pozice">3.</span> Carlos Sainz (Ferrari)</p>
             </div>
-            <div class="rok">
-                <p class="date">2022</p>
-                <div class="podium">
-                    <p><span class="pozice">1.</span> Max Verstappen (Red Bull)</p>
-                    <p><span class="pozice">2.</span> Charles Leclerc (Ferrari)</p>
-                    <p><span class="pozice">3.</span> Lando Norris (McLaren)</p>
-                </div>
+          </div>
+          <div class="rok">
+            <p class="date">2022</p>
+            <div class="podium">
+              <p><span class="pozice">1.</span> Max Verstappen (Red Bull)</p>
+              <p><span class="pozice">2.</span> Charles Leclerc (Ferrari)</p>
+              <p><span class="pozice">3.</span> Lando Norris (McLaren)</p>
             </div>
-            <div class="rok">
-                <p class="date">2021</p>
-                <div class="podium">
-                    <p><span class="pozice">1.</span> Daniel Ricciardo (McLaren)</p>
-                    <p><span class="pozice">2.</span> Lando Norris (McLaren)</p>
-                    <p><span class="pozice">3.</span> Valtteri Bottas (Mercedes)</p>
-                </div>
+          </div>
+          <div class="rok">
+            <p class="date">2021</p>
+            <div class="podium">
+              <p><span class="pozice">1.</span> Daniel Ricciardo (McLaren)</p>
+              <p><span class="pozice">2.</span> Lando Norris (McLaren)</p>
+              <p><span class="pozice">3.</span> Valtteri Bottas (Mercedes)</p>
             </div>
-            <div class="rok">
-                <p class="date">2020</p>
-                <div class="podium">
-                    <p><span class="pozice">1.</span> Lewis Hamilton (Mercedes)</p>
-                    <p><span class="pozice">2.</span> Valtteri Bottas (Mercedes)</p>
-                    <p><span class="pozice">3.</span> Max Verstappen (Red Bull)</p>
-                </div>
+          </div>
+          <div class="rok">
+            <p class="date">2020</p>
+            <div class="podium">
+              <p><span class="pozice">1.</span> Lewis Hamilton (Mercedes)</p>
+              <p><span class="pozice">2.</span> Valtteri Bottas (Mercedes)</p>
+              <p><span class="pozice">3.</span> Max Verstappen (Red Bull)</p>
             </div>
-            <div class="rok">
-                <p class="date">2019</p>
-                <div class="podium">
-                    <p><span class="pozice">1.</span> Charles Leclerc (Ferrari)</p>
-                    <p><span class="pozice">2.</span> Valtteri Bottas (Mercedes)</p>
-                    <p><span class="pozice">3.</span> Lewis Hamilton (Mercedes)</p>
-                </div>
+          </div>
+          <div class="rok">
+            <p class="date">2019</p>
+            <div class="podium">
+              <p><span class="pozice">1.</span> Charles Leclerc (Ferrari)</p>
+              <p><span class="pozice">2.</span> Valtteri Bottas (Mercedes)</p>
+              <p><span class="pozice">3.</span> Lewis Hamilton (Mercedes)</p>
             </div>
-            <div class="rok">
-                <p class="date">2018</p>
-                <div class="podium">
-                    <p><span class="pozice">1.</span> Lewis Hamilton (Mercedes)</p>
-                    <p><span class="pozice">2.</span> Kimi Räikkönen (Ferrari)</p>
-                    <p><span class="pozice">3.</span> Valtteri Bottas (Mercedes)</p>
-                </div>
+          </div>
+          <div class="rok">
+            <p class="date">2018</p>
+            <div class="podium">
+              <p><span class="pozice">1.</span> Lewis Hamilton (Mercedes)</p>
+              <p><span class="pozice">2.</span> Kimi Räikkönen (Ferrari)</p>
+              <p><span class="pozice">3.</span> Valtteri Bottas (Mercedes)</p>
             </div>
-            <div class="rok">
-                <p class="date">2017</p>
-                <div class="podium">
-                    <p><span class="pozice">1.</span> Sebastian Vettel (Ferrari)</p>
-                    <p><span class="pozice">2.</span> Max Verstappen (Red Bull)</p>
-                    <p><span class="pozice">3.</span> Kimi Räikkönen (Ferrari)</p>
-                </div>
+          </div>
+          <div class="rok">
+            <p class="date">2017</p>
+            <div class="podium">
+              <p><span class="pozice">1.</span> Sebastian Vettel (Ferrari)</p>
+              <p><span class="pozice">2.</span> Max Verstappen (Red Bull)</p>
+              <p><span class="pozice">3.</span> Kimi Räikkönen (Ferrari)</p>
             </div>
-            <div class="rok">
-                <p class="date">2016</p>
-                <div class="podium">
-                    <p><span class="pozice">1.</span> Nico Rosberg (Mercedes)</p>
-                    <p><span class="pozice">2.</span> Lewis Hamilton (Mercedes)</p>
-                    <p><span class="pozice">3.</span> Sebastian Vettel (Ferrari)</p>
-                </div>
+          </div>
+          <div class="rok">
+            <p class="date">2016</p>
+            <div class="podium">
+              <p><span class="pozice">1.</span> Nico Rosberg (Mercedes)</p>
+              <p><span class="pozice">2.</span> Lewis Hamilton (Mercedes)</p>
+              <p><span class="pozice">3.</span> Sebastian Vettel (Ferrari)</p>
             </div>
+          </div>
         </div>
-      </section>
-
-      <section class="minulost">
-        <h2 id="minulost">Momenty z minulosti</h2>
       </section>
 
       <footer>
@@ -284,8 +337,7 @@
         </div>
         <div class="footer-mid">
           <a href="zavody.html">Závody</a>
-          <a href="tymy.html">Týmy</a>
-          <a href="2025.html">Sezóna 2025</a>
+          <a href="2024.html">Sezóna 2024</a>
         </div>
         <div class="footer-right">
           <p>

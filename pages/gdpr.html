@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Ikony -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Fonty -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+
+    <!-- Styly -->
+    <link rel="stylesheet" href="../styles/mainstyle.css" />
+    <link rel="stylesheet" href="../styles/infopage.css" />
+
+    <!-- Skripty-->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-10NKG4WQ5T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-10NKG4WQ5T");
+    </script>
+
+    <title>Pitline - Hlavní stránka</title>
+  </head>
+  <body>
+    <div class="staticbuttons">
+      <button
+        id="menubutton"
+        class="menubutton black instatic"
+        onclick="openMenu()"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="../index.html" class="homebutton instatic">
+        <span class="material-symbols-outlined">home</span>
+        <p>Domů</p>
+      </a>
+    </div>
+
+    <div class="closed menu" id="menu">
+      <div class="links">
+        <a href="zavody.html">
+          <span class="material-symbols-outlined">sports_score</span>
+          <p>Závody</p>
+        </a>
+        <a href="2024.html">
+          <span class="material-symbols-outlined">calendar_today</span>
+          <p>Sezóna 2024</p>
+        </a>
+      </div>
+
+      <div class="linksmid1">
+        <p class="menutext">Závody</p>
+        <a href="monza.html">
+          <span class="fi fi-it"></span>
+          <p>Monza</p>
+        </a>
+        <a href="spa.html">
+          <span class="fi fi-be"></span>
+          <p>Spa Francorshamp</p> </a
+        ><a href="monaco.html">
+          <span class="fi fi-mc"></span>
+          <p>Monaco</p>
+        </a>
+      </div>
+
+      <div class="linksmid2">
+        <p class="menutext">Piloti</p>
+        <a href="max.html">
+          <span class="fi fi-nl"></span>
+          <p>Max Verstappen</p> </a
+        ><a href="lando.html">
+          <span class="fi fi-gb"></span>
+          <p>Lando Norris</p> </a
+        ><a href="leclerc.html">
+          <span class="fi fi-mc"></span>
+          <p>Charles Leclerc</p>
+        </a>
+      </div>
+
+      <div class="links2">
+        <p class="menutext">Ostatní</p>
+        <a href="https://github.com/alechunder01/pitline">
+          <span class="material-symbols-outlined">docs</span>
+          <p>GitHub repositář</p>
+        </a>
+        <a href="onas.html">
+          <span class="material-symbols-outlined">account_circle</span>
+          <p>O mě</p>
+        </a>
+        <a href="gdpr.html">
+          <span class="material-symbols-outlined">policy_alert</span>
+          <p>GDPR</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="homesection1">
+        <div class="upper">
+          <h1>GDPR</h1>
+          <br />
+          <p>
+            Tato webová stránka dodržuje zásady ochrany osobních údajů dle
+            nařízení Evropské unie č. 2016/679 (GDPR).
+          </p>
+        </div>
+      </section>
+
+      <section class="gdpr">
+        <h2>Jaké údaje zpracováváme?</h2>
+        <p>
+          Na těchto stránkách je využívána služba
+          <strong>Google Analytics</strong>, která anonymně sleduje návštěvnost
+          a chování návštěvníků. Zaznamenávají se například informace o použitém
+          zařízení, typu prohlížeče, přibližné poloze nebo délce návštěvy.
+        </p>
+        <p>
+          Veškerá data jsou zpracovávána anonymně a nejsou spojena s konkrétní
+          osobou. Nepožadujeme ani neshromažďujeme žádné osobní údaje jako
+          jméno, e-mail či adresu.
+        </p>
+
+        <h2>Kdo je správcem údajů?</h2>
+        <p>
+          Správcem osobních údajů je: <strong>Alex</strong>, student Střední
+          odborné školy IT a ekonomie Olomoucká.<br />
+          V případě dotazů nás prosím kontaktujte na e-mailové adrese:
+          <em>alexsnico08@gmail.com</em>
+        </p>
+
+        <h2>Vaše práva</h2>
+        <p>
+          V souladu s GDPR máte právo na přístup ke svým údajům, jejich opravu,
+          výmaz, omezení zpracování či námitku proti zpracování. I když
+          zpracováváme pouze anonymní údaje, neváhejte se na nás obrátit s
+          jakýmikoli dotazy ohledně ochrany soukromí.
+        </p>
+      </section>
+
+      <footer>
+        <div class="footer-left">
+          <a href="../index.html">Pitline.com</a>
+        </div>
+        <div class="footer-mid">
+          <a href="zavody.html">Závody</a>
+          <a href="2024.html">Sezóna 2024</a>
+        </div>
+        <div class="footer-right">
+          <p>
+            <span class="material-symbols-outlined">copyright</span>
+            Alexandre Nicolas, 2025
+          </p>
+          <a href="https://github.com/alechunder01/pitline">GitHub repositář</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../scripts/menuopener.js"></script>
+  </body>
+</html>

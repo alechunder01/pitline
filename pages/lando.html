@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Ikony -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Fonty -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+
+    <!-- Styly -->
+    <link rel="stylesheet" href="../styles/mainstyle.css" />
+    <link rel="stylesheet" href="../styles/driverpage.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-10NKG4WQ5T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-10NKG4WQ5T");
+    </script>
+
+    <title>Pitline - Max Verstappen</title>
+  </head>
+  <body>
+    <div class="staticbuttons">
+      <button
+        id="menubutton"
+        class="menubutton black instatic"
+        onclick="openMenu()"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="../index.html" class="homebutton instatic">
+        <span class="material-symbols-outlined">home</span>
+        <p>Domů</p>
+      </a>
+    </div>
+
+    <div class="closed menu" id="menu">
+      <div class="links">
+        <a href="zavody.html">
+          <span class="material-symbols-outlined">sports_score</span>
+          <p>Závody</p>
+        </a>
+        <a href="2024.html">
+          <span class="material-symbols-outlined">calendar_today</span>
+          <p>Sezóna 2024</p>
+        </a>
+      </div>
+
+      <div class="linksmid1">
+        <p class="menutext">Závody</p>
+        <a href="monza.html">
+          <span class="fi fi-it"></span>
+          <p>Monza</p>
+        </a>
+        <a href="spa.html">
+          <span class="fi fi-be"></span>
+          <p>Spa Francorshamp</p> </a
+        ><a href="monaco.html">
+          <span class="fi fi-mc"></span>
+          <p>Monaco</p>
+        </a>
+      </div>
+
+      <div class="linksmid2">
+        <p class="menutext">Piloti</p>
+        <a href="max.html">
+          <span class="fi fi-nl"></span>
+          <p>Max Verstappen</p> </a
+        ><a href="lando.html">
+          <span class="fi fi-gb"></span>
+          <p>Lando Norris</p> </a
+        ><a href="leclerc.html">
+          <span class="fi fi-mc"></span>
+          <p>Charles Leclerc</p>
+        </a>
+      </div>
+
+      <div class="links2">
+        <a href="https://github.com/alechunder01/pitline">
+          <span class="material-symbols-outlined">docs</span>
+          <p>GitHub repositář</p>
+        </a>
+        <a href="">
+          <span class="material-symbols-outlined">policy_alert</span>
+          <p>GDPR</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="closed menu" id="menu">
+      <div class="links">
+        <a href="../index.html">
+          <span class="material-symbols-outlined">home</span>
+          <p>Domů</p>
+        </a>
+        <a href="zavody.html">
+          <span class="material-symbols-outlined">sports_score</span>
+          <p>Závody</p>
+        </a>
+        <a href="tymy.html">
+          <span class="material-symbols-outlined">sports_motorsports</span>
+          <p>Týmy</p>
+        </a>
+        <a href="2025.html">
+          <span class="material-symbols-outlined">calendar_today</span>
+          <p>Sezóna 2025</p>
+        </a>
+        <a href="history.html">
+          <span class="material-symbols-outlined">history</span>
+          <p>Minulost</p>
+        </a>
+      </div>
+
+      <div class="links2">
+        <p class="menutext">Ostatní</p>
+        <a href="https://github.com/alechunder01/pitline">
+          <span class="material-symbols-outlined">docs</span>
+          <p>GitHub repositář</p>
+        </a>
+        <a href="onas.html">
+          <span class="material-symbols-outlined">account_circle</span>
+          <p>O mě</p>
+        </a>
+        <a href="gdpr.html">
+          <span class="material-symbols-outlined">policy_alert</span>
+          <p>GDPR</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="homesection1">
+        <div class="upper">
+          <h1>Lando Norris</h1>
+          <p>
+            Zde najdete informace o Landovi Norrisovi, hvězdě týmu McLaren a
+            miláčkovi fanoušků Formule 1.
+          </p>
+        </div>
+        <div class="lower">
+          <a href="#info">
+            <span class="material-symbols-outlined">info</span>
+            <p>Informace</p>
+          </a>
+          <a href="#stats">
+            <span class="material-symbols-outlined">leaderboard</span>
+            <p>Výsledky</p>
+          </a>
+        </div>
+      </section>
+
+      <section class="info">
+        <h2 id="info">Informace</h2>
+        <div class="innerinfo">
+          <div class="left">
+            <p>
+              Lando Norris je jedním z nejoblíbenějších a nejzábavnějších jezdců
+              ve světě Formule 1. Ale pod jeho vtipnou fasádou se skrývá
+              skutečný závodní talent.
+            </p>
+            <p>
+              Ve Formuli 1 debutoval v roce 2019 s týmem McLaren, kde od začátku
+              ukazoval konzistentní výkony a skvělou rychlost.
+            </p>
+            <p>
+              Lando je známý svou skvělou prací s pneumatikami, čistým závodním
+              stylem a schopností se zlepšovat každou sezónu.
+            </p>
+            <p>
+              Po několika pódiích si v roce 2024 konečně dojel pro své první
+              vítězství – a svět F1 jásal s ním.
+            </p>
+            <p>
+              Díky svému přirozenému šarmu, talentu a loajalitě k McLarenu patří
+              mezi nové hvězdy F1, které se rozhodně vyplatí sledovat.
+            </p>
+          </div>
+          <div class="right">
+            <div class="gridinfo">
+              <div class="label">
+                <span class="material-symbols-outlined">person</span>
+                Celé jméno
+              </div>
+              <div class="value">Lando Norris</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">flag</span>
+                Národnost
+              </div>
+              <div class="value">Britská</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">calendar_month</span>
+                Datum narození
+              </div>
+              <div class="value">13. listopadu 1999</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined"
+                  >sports_motorsports</span
+                >
+                Tým
+              </div>
+              <div class="value">McLaren F1 Team</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">emoji_events</span>
+                První vítězství
+              </div>
+              <div class="value">GP Miami 2024</div>
+
+              <div class="label">
+                <span class="material-symbols-outlined">timer</span>
+                Debut ve F1
+              </div>
+              <div class="value">2019</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="fotovideo">
+        <h2 id="foto">Fotky a Video</h2>
+        <div class="innerfotovideo">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img
+                src="../images/pilots/lando/lando1.jpg"
+                style="height: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img
+                src="../images/pilots/lando/lando2.jpg"
+                style="height: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img
+                src="../images/pilots/lando/lando3.jpg"
+                style="height: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img
+                src="../images/pilots/lando/lando4.jpg"
+                style="height: 100%"
+              />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img
+                src="../images/pilots/lando/lando5.jpg"
+                style="height: 100%"
+              />
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <div class="topvideo">
+            <video src="../videos/lando.mp4" controls></video>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-left">
+          <a href="../index.html">Pitline.com</a>
+        </div>
+        <div class="footer-mid">
+          <a href="zavody.html">Závody</a>
+          <a href="2024.html">Sezóna 2024</a>
+        </div>
+        <div class="footer-right">
+          <p>
+            <span class="material-symbols-outlined">copyright</span>
+            Alexandre Nicolas, 2025
+          </p>
+          <a href="https://github.com/alechunder01/pitline">GitHub repositář</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../scripts/menuopener.js"></script>
+    <script src="../scripts/imagechanger.js"></script>
+  </body>
+</html>

@@ -1,427 +1,622 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Ikony -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
 
     <!-- Fonty -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
 
     <!-- Styly -->
-    <link rel="stylesheet" href="../styles/mainstyle.css">
-    <link rel="stylesheet" href="../styles/racespage.css">
+    <link rel="stylesheet" href="../styles/mainstyle.css" />
+    <link rel="stylesheet" href="../styles/racespage.css" />
 
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-10NKG4WQ5T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-10NKG4WQ5T");
+    </script>
 
     <title>Pitline - Závody</title>
-</head>
-<body>
-    <button id="menubutton" class="menubutton black" onclick="openMenu()">
+  </head>
+  <body>
+    <div class="staticbuttons">
+      <button
+        id="menubutton"
+        class="menubutton black instatic"
+        onclick="openMenu()"
+      >
         <span class="material-symbols-outlined">menu</span>
       </button>
+      <a href="../index.html" class="homebutton instatic">
+        <span class="material-symbols-outlined">home</span>
+        <p>Domů</p>
+      </a>
+    </div>
 
     <div class="closed menu" id="menu">
-        <div class="links">
-            <a href="../index.html">
-                <span class="material-symbols-outlined">home</span>
-                <p>Domů</p>
-            </a>
-            <a href="zavody.html">
-                <span class="material-symbols-outlined">sports_score</span>
-                <p>Závody</p>
-            </a>
-            <a href="tymy.html">
-                <span class="material-symbols-outlined">sports_motorsports</span>
-                <p>Týmy</p>
-            </a>
-            <a href="2025.html">
-                <span class="material-symbols-outlined">calendar_today</span>
-                <p>Sezóna 2025</p>
-            </a>
-            <a href="history.html">
-                <span class="material-symbols-outlined">history</span>
-                <p>Minulost</p>
-            </a>
-        </div>
-        <div class="links2">
-            <a href="https://github.com/alechunder01/pitline">
-                <span class="material-symbols-outlined">docs</span>
-                <p>GitHub repositář</p>
-            </a>
-            <a href="">
-                <span class="material-symbols-outlined">policy_alert</span>
-                <p>GDPR</p>
-            </a>
-        </div>
+      <div class="links">
+        <a href="zavody.html">
+          <span class="material-symbols-outlined">sports_score</span>
+          <p>Závody</p>
+        </a>
+        <a href="2024.html">
+          <span class="material-symbols-outlined">calendar_today</span>
+          <p>Sezóna 2024</p>
+        </a>
+      </div>
+
+      <div class="linksmid1">
+        <p class="menutext">Závody</p>
+        <a href="monza.html">
+          <span class="fi fi-it"></span>
+          <p>Monza</p>
+        </a>
+        <a href="spa.html">
+          <span class="fi fi-be"></span>
+          <p>Spa Francorshamp</p> </a
+        ><a href="monaco.html">
+          <span class="fi fi-mc"></span>
+          <p>Monaco</p>
+        </a>
+      </div>
+
+      <div class="linksmid2">
+        <p class="menutext">Piloti</p>
+        <a href="max.html">
+          <span class="fi fi-nl"></span>
+          <p>Max Verstappen</p> </a
+        ><a href="lando.html">
+          <span class="fi fi-gb"></span>
+          <p>Lando Norris</p> </a
+        ><a href="leclerc.html">
+          <span class="fi fi-mc"></span>
+          <p>Charles Leclerc</p>
+        </a>
+      </div>
+
+      <div class="links2">
+        <p class="menutext">Ostatní</p>
+        <a href="https://github.com/alechunder01/pitline">
+          <span class="material-symbols-outlined">docs</span>
+          <p>GitHub repositář</p>
+        </a>
+        <a href="onas.html">
+          <span class="material-symbols-outlined">account_circle</span>
+          <p>O mě</p>
+        </a>
+        <a href="gdpr.html">
+          <span class="material-symbols-outlined">policy_alert</span>
+          <p>GDPR</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="closed menu" id="menu">
+      <div class="links">
+        <a href="../index.html">
+          <span class="material-symbols-outlined">home</span>
+          <p>Domů</p>
+        </a>
+        <a href="zavody.html">
+          <span class="material-symbols-outlined">sports_score</span>
+          <p>Závody</p>
+        </a>
+        <a href="tymy.html">
+          <span class="material-symbols-outlined">sports_motorsports</span>
+          <p>Týmy</p>
+        </a>
+        <a href="2025.html">
+          <span class="material-symbols-outlined">calendar_today</span>
+          <p>Sezóna 2025</p>
+        </a>
+        <a href="history.html">
+          <span class="material-symbols-outlined">history</span>
+          <p>Minulost</p>
+        </a>
+      </div>
+      <div class="links2">
+        <a href="https://github.com/alechunder01/pitline">
+          <span class="material-symbols-outlined">docs</span>
+          <p>GitHub repositář</p>
+        </a>
+        <a href="">
+          <span class="material-symbols-outlined">policy_alert</span>
+          <p>GDPR</p>
+        </a>
+      </div>
     </div>
 
     <div class="grid">
+      <section class="homesection1">
+        <div class="upper">
+          <h1>Závody</h1>
+          <p>
+            V této sekci najdete informace o okruzích kde se aktuálně jezdili
+            Velké ceny Formulí 1.
+          </p>
+        </div>
+        <div class="lower">
+          <a href="#oblibene">
+            <span class="material-symbols-outlined">favorite</span>
+            <p>Oblíbené</p>
+          </a>
+          <a href="#minulost">
+            <span class="material-symbols-outlined">history</span>
+            <p>Minulost</p>
+          </a>
+          <a href="#aktualni">
+            <span class="material-symbols-outlined">calendar_today</span>
+            <p>Aktuální</p>
+          </a>
+        </div>
+      </section>
 
-        <section class="homesection1">
-
-            <div class="upper">
-                <h1>Závody</h1>
-                <p>V této sekci najdete informace o okruzích kde se aktuálně jezdili Velké ceny Formulí 1.</p>
+      <section class="oblibene">
+        <h2 id="oblibene">Oblíbené</h2>
+        <div class="favtop4">
+          <a class="fav link1" href="monza.html">
+            <div class="name">
+              <p>Monza</p>
             </div>
-            <div class="lower">
-                <a href="#oblibene">
-                    <span class="material-symbols-outlined">favorite</span>
-                    <p>Oblíbené</p>
-                </a>
-                <a href="#minulost">
-                    <span class="material-symbols-outlined">history</span>
-                    <p>Minulost</p>
-                </a>
-                <a href="#aktualni">
-                    <span class="material-symbols-outlined">calendar_today</span>
-                    <p>Aktuální</p>
-                </a>
+          </a>
+          <a class="fav link2" href="monaco.html">
+            <div class="name">
+              <p>Monako</p>
             </div>
-
-        </section>
-
-        <section class="oblibene">
-            <h2 id="oblibene">Oblíbené</h2>
-            <div class="favtop4">
-                <a class="fav link1" href="monza.html">
-                    <div class="name">
-                        <p>Monza</p>
-                    </div>
-                </a>
-                <a class="fav link2" href="monaco.html">
-                    <div class="name">
-                        <p>Monako</p>
-                    </div>
-                </a>
-                <a class="fav link3" href="spa.html">
-                    <div class="name">
-                        <p>Spa-Francorchamps</p>
-                    </div>
-                </a>
+          </a>
+          <a class="fav link3" href="spa.html">
+            <div class="name">
+              <p>Spa-Francorchamps</p>
             </div>
-        </section>
+          </a>
+        </div>
+      </section>
 
-        <section class="aktualni">
-            <h2 id="aktualni">Aktuální</h2>
-            <div class="bloky">
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Australia_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Austrálie</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/China_Circuit.png" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Číny</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Japan_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Japonska</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Bahrain_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Bahrajnu</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Saudi_Arabia_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Saúdské Arábie</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Miami_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Miami</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Emilia_Romagna_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Emilia Romagna</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Monaco_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Monaka</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Spain_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Španělska</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Canada_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Kanady</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Austria_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Rakouska</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Great_Britain_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Velké Británie</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Belgium_Circuit.png" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Belgie</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Hungary_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Maďarska</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Netherlands_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Nizozemska</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Italy_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Itálie</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Baku_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Ázerbájdžánu</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Singapore_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Singapuru</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/USA_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena USA</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Mexico_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Mexika</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Brazil_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena São Paula</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Las_Vegas_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Las Vegas</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Qatar_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Kataru</p>
-                    </div>
-                </div>
-                
-                <div class="race">
-                    <div class="left">
-                        <img src="../images/mapy/Abu_Dhabi_Circuit.avif" alt="">
-                    </div>
-                    <div class="right">
-                        <p class="name">Velká cena Abú Zabí</p>
-                    </div>
-                </div>
-                
-                
+      <section class="aktualni">
+        <h2 id="aktualni">Aktuální</h2>
+        <div class="bloky">
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Australia_Circuit.avif" alt="" />
             </div>
-        </section>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-au"></span> Velká cena Austrálie
+              </p>
+            </div>
+          </div>
 
-        <section class="minulost">
-            <h2 id="minulost">Minulost</h2>
-            <div class="bloky">
-                <div class="block block1">
-                    <div class="left">
-                        <img src="../images/nurburgring.jpg" alt="nurburgring circuit">
-                    </div>
-                    <div class="right">
-                        <p class="name">Nürburgring Nordschleife</p>
-                        <p class="country">Německo</p>
-                        <p class="year">1951 - 1976</p>
-                        <p class="info">Legendární okruh známý jako „Zelené peklo“ se vine krajinou německého pohoří Eifel. Měří přes 22 kilometrů a nabízí více než 150 zatáček, výškové rozdíly a extrémní nároky na jezdce i techniku. Kvůli bezpečnostním obavám - vyvrcholeným těžkou nehodou Niky Laudy v roce 1976 - byl Nordschleife vyřazen z kalendáře Formule 1.</p>
-                    </div>
-                </div>
-                <div class="block block2">
-                    <div class="left">
-                        <img src="../images/adelaide.jpg" alt="adelaide circuit">
-                    </div>
-                    <div class="right">
-                        <p class="name">Adelaide Street Circuit</p>
-                        <p class="country">Austrálie</p>
-                        <p class="year">1985 - 1995</p>
-                        <p class="info">Městský okruh v ulicích Adelaide přinesl do F1 jedinečnou atmosféru australského léta. Trať byla známá nejen svou technickou náročností, ale i dramatickými konci sezón - například v roce 1986, kdy zde havaroval Nigel Mansell a přišel o titul. Adelaide se stalo legendou krátkého, ale intenzivního období australské GP.</p>
-                    </div>
-                </div>
-                <div class="block block3">
-                    <div class="left">
-                        <img src="../images/brands.jpg" alt="brands hatch circuit">
-                    </div>
-                    <div class="right">
-                        <p class="name">Brands Hatch</p>
-                        <p class="country">Velká Británie</p>
-                        <p class="year">1964 - 1986</p>
-                        <p class="info">Tradiční britský okruh zasazený do přírodní scenérie hrabství Kent. Jeho plynulé zatáčky a zvlněný profil nabízely skvělou podívanou i jezdecký zážitek. Brands Hatch se střídal se Silverstonem v roli hostitele britské Velké ceny, než byl z kalendáře F1 definitivně vyřazen.</p>
-                    </div>
-                </div>
-                <div class="block block4">
-                    <div class="left">
-                        <img src="../images/watkins.jpg" alt="watkins glen circuit">
-                    </div>
-                    <div class="right">
-                        <p class="name">Watkins Glen</p>
-                        <p class="country">Spojené Státy</p>
-                        <p class="year">1961 - 1980</p>
-                        <p class="info">Rychlý a technicky náročný okruh umístěný v zalesněné oblasti státu New York. Watkins Glen si získal oblibu mezi jezdci i fanoušky a dlouho byl domovem americké Grand Prix. Nakonec však trať přestala vyhovovat rostoucím bezpečnostním požadavkům moderní F1.</p>
-                    </div>
-                </div>
-                <div class="block block5">
-                    <div class="left">
-                        <img src="../images/longbeach.jpg" alt="longbeach circuit">
-                    </div>
-                    <div class="right">
-                        <p class="name">Long Beach</p>
-                        <p class="country">Spojené státy</p>
-                        <p class="year">1976 - 1983</p>
-                        <p class="info">Okruh vedený ulicemi kalifornského Long Beach bývá často přirovnáván k Monaku - palmy, přístav a městská atmosféra nabízely styl i napětí. Závody zde měly šmrnc, ale náklady na pořádání byly vysoké. F1 se nakonec stáhla, přesto si trať uchovala kultovní status.</p>
-                    </div>
-                </div>
-                <div class="block block6">
-                    <div class="left">
-                        <img src="../images/pescara.jpg" alt="pescara circuit">
-                    </div>
-                    <div class="right">
-                        <p class="name">Pescara Circuit</p>
-                        <p class="country">Itálie</p>
-                        <p class="year">1957</p>
-                        <p class="info">Nejdelší trať v historii Formule 1 - měřila neuvěřitelných 25,8 kilometru a vedla po běžných silnicích, skrz vesnice i horské silnice u pobřeží Jaderského moře. Závod v Pescaře byl krásný, ale extrémně nebezpečný. Formule 1 zde startovala jen jednou - a nikdy více.</p>
-                    </div>
-                </div>
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/China_Circuit.png" alt="" />
             </div>
-            
-        </section>
+            <div class="right">
+              <p class="name"><span class="fi fi-cn"></span> Velká cena Číny</p>
+            </div>
+          </div>
 
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Japan_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-jp"></span> Velká cena Japonska
+              </p>
+            </div>
+          </div>
 
-        <footer>
-            <div class="footer-left">
-                <a href="../index.html">Pitline.com</a>
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Bahrain_Circuit.avif" alt="" />
             </div>
-            <div class="footer-mid">
-                <a href="zavody.html">Závody</a>
-                <a href="tymy.html">Týmy</a>
-                <a href="2025.html">Sezóna 2025</a>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-bh"></span> Velká cena Bahrajnu
+              </p>
             </div>
-            <div class="footer-right">
-                <p>
-                    <span class="material-symbols-outlined">copyright</span>
-                    Alexandre Nicolas, 2025
-                </p>
-                <a href="https://github.com/alechunder01/pitline">GitHub repositář</a>
-            </div>
-        </footer>
+          </div>
 
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Saudi_Arabia_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-sa"></span> Velká cena Saúdské Arábie
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Miami_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-us"></span> Velká cena Miami
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Emilia_Romagna_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-it"></span> Velká cena Emilia Romagna
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Monaco_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-mc"></span> Velká cena Monaka
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Spain_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-es"></span> Velká cena Španělska
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Canada_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-ca"></span> Velká cena Kanady
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Austria_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-at"></span> Velká cena Rakouska
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Great_Britain_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-gb"></span> Velká cena Velké Británie
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Belgium_Circuit.png" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-be"></span> Velká cena Belgie
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Hungary_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-hu"></span> Velká cena Maďarska
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Netherlands_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-nl"></span> Velká cena Nizozemska
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Italy_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-it"></span> Velká cena Itálie
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Baku_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-az"></span> Velká cena Ázerbájdžánu
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Singapore_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-sg"></span> Velká cena Singapuru
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/USA_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name"><span class="fi fi-us"></span> Velká cena USA</p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Mexico_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-mx"></span> Velká cena Mexika
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Brazil_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-br"></span> Velká cena São Paula
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Las_Vegas_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-us"></span> Velká cena Las Vegas
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Qatar_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-qa"></span> Velká cena Kataru
+              </p>
+            </div>
+          </div>
+
+          <div class="race">
+            <div class="left">
+              <img src="../images/mapy/Abu_Dhabi_Circuit.avif" alt="" />
+            </div>
+            <div class="right">
+              <p class="name">
+                <span class="fi fi-ae"></span> Velká cena Abú Zabí
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="minulost">
+        <h2 id="minulost">Minulost</h2>
+        <div class="bloky">
+          <div class="block block1">
+            <div class="left">
+              <img src="../images/nurburgring.jpg" alt="nurburgring circuit" />
+            </div>
+            <div class="right">
+              <p class="name">Nürburgring Nordschleife</p>
+              <p class="country"><span class="fi fi-de"></span> Německo</p>
+              <p class="year">1951 - 1976</p>
+              <p class="info">
+                Legendární okruh známý jako „Zelené peklo“ se vine krajinou
+                německého pohoří Eifel. Měří přes 22 kilometrů a nabízí více než
+                150 zatáček, výškové rozdíly a extrémní nároky na jezdce i
+                techniku. Kvůli bezpečnostním obavám - vyvrcholeným těžkou
+                nehodou Niky Laudy v roce 1976 - byl Nordschleife vyřazen z
+                kalendáře Formule 1.
+              </p>
+            </div>
+          </div>
+          <div class="block block2">
+            <div class="left">
+              <img src="../images/adelaide.jpg" alt="adelaide circuit" />
+            </div>
+            <div class="right">
+              <p class="name">Adelaide Street Circuit</p>
+              <p class="country"><span class="fi fi-au"></span> Austrálie</p>
+              <p class="year">1985 - 1995</p>
+              <p class="info">
+                Městský okruh v ulicích Adelaide přinesl do F1 jedinečnou
+                atmosféru australského léta. Trať byla známá nejen svou
+                technickou náročností, ale i dramatickými konci sezón -
+                například v roce 1986, kdy zde havaroval Nigel Mansell a přišel
+                o titul. Adelaide se stalo legendou krátkého, ale intenzivního
+                období australské GP.
+              </p>
+            </div>
+          </div>
+          <div class="block block3">
+            <div class="left">
+              <img src="../images/brands.jpg" alt="brands hatch circuit" />
+            </div>
+            <div class="right">
+              <p class="name">Brands Hatch</p>
+              <p class="country">
+                <span class="fi fi-gb"></span> Velká Británie
+              </p>
+              <p class="year">1964 - 1986</p>
+              <p class="info">
+                Tradiční britský okruh zasazený do přírodní scenérie hrabství
+                Kent. Jeho plynulé zatáčky a zvlněný profil nabízely skvělou
+                podívanou i jezdecký zážitek. Brands Hatch se střídal se
+                Silverstonem v roli hostitele britské Velké ceny, než byl z
+                kalendáře F1 definitivně vyřazen.
+              </p>
+            </div>
+          </div>
+          <div class="block block4">
+            <div class="left">
+              <img src="../images/watkins.jpg" alt="watkins glen circuit" />
+            </div>
+            <div class="right">
+              <p class="name">Watkins Glen</p>
+              <p class="country">
+                <span class="fi fi-us"></span> Spojené Státy
+              </p>
+              <p class="year">1961 - 1980</p>
+              <p class="info">
+                Rychlý a technicky náročný okruh umístěný v zalesněné oblasti
+                státu New York. Watkins Glen si získal oblibu mezi jezdci i
+                fanoušky a dlouho byl domovem americké Grand Prix. Nakonec však
+                trať přestala vyhovovat rostoucím bezpečnostním požadavkům
+                moderní F1.
+              </p>
+            </div>
+          </div>
+          <div class="block block5">
+            <div class="left">
+              <img src="../images/longbeach.jpg" alt="longbeach circuit" />
+            </div>
+            <div class="right">
+              <p class="name">Long Beach</p>
+              <p class="country">
+                <span class="fi fi-us"></span> Spojené státy
+              </p>
+              <p class="year">1976 - 1983</p>
+              <p class="info">
+                Okruh vedený ulicemi kalifornského Long Beach bývá často
+                přirovnáván k Monaku - palmy, přístav a městská atmosféra
+                nabízely styl i napětí. Závody zde měly šmrnc, ale náklady na
+                pořádání byly vysoké. F1 se nakonec stáhla, přesto si trať
+                uchovala kultovní status.
+              </p>
+            </div>
+          </div>
+          <div class="block block6">
+            <div class="left">
+              <img src="../images/pescara.jpg" alt="pescara circuit" />
+            </div>
+            <div class="right">
+              <p class="name">Pescara Circuit</p>
+              <p class="country"><span class="fi fi-it"></span> Itálie</p>
+              <p class="year">1957</p>
+              <p class="info">
+                Nejdelší trať v historii Formule 1 - měřila neuvěřitelných 25,8
+                kilometru a vedla po běžných silnicích, skrz vesnice i horské
+                silnice u pobřeží Jaderského moře. Závod v Pescaře byl krásný,
+                ale extrémně nebezpečný. Formule 1 zde startovala jen jednou - a
+                nikdy více.
+              </p>
+            </div>
+          </div>
+          <div class="block block7">
+            <div class="left">
+              <img src="../images/lecastellet.jpg" alt="le castellet circuit" />
+            </div>
+            <div class="right">
+              <p class="name">Le Castellet</p>
+              <p class="country"><span class="fi fi-fr"></span> Francie</p>
+              <p class="year"></p>
+              <p class="info">
+                Circuit Paul Ricard ve francouzském Le Castellet je moderní a
+                technicky náročný okruh, známý dlouhou rovinkou Mistral, rychlou
+                zatáčkou Signes a typickými barevnými únikovými zónami. Díky své
+                bezpečnosti byl často využíván k testování, než se v roce 2018
+                vrátil do kalendáře F1. Kvůli nevýrazné závodní akci a
+                logistickým potížím však po sezóně 2022 z programu opět vypadl.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-left">
+          <a href="../index.html">Pitline.com</a>
+        </div>
+        <div class="footer-mid">
+          <a href="zavody.html">Závody</a>
+          <a href="2024.html">Sezóna 2024</a>
+        </div>
+        <div class="footer-right">
+          <p>
+            <span class="material-symbols-outlined">copyright</span>
+            Alexandre Nicolas, 2025
+          </p>
+          <a href="https://github.com/alechunder01/pitline">GitHub repositář</a>
+        </div>
+      </footer>
     </div>
     <script src="../scripts/menuopener.js"></script>
-</body>
+  </body>
 </html>

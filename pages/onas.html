@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Ikony -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+
+    <!-- Fonty -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.3.2/css/flag-icons.min.css"
+    />
+
+    <!-- Styly -->
+    <link rel="stylesheet" href="../styles/mainstyle.css" />
+    <link rel="stylesheet" href="../styles/infopage.css" />
+
+    <!-- Skripty-->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-10NKG4WQ5T"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-10NKG4WQ5T");
+    </script>
+
+    <title>Pitline - Hlavní stránka</title>
+  </head>
+  <body>
+    <div class="staticbuttons">
+      <button
+        id="menubutton"
+        class="menubutton black instatic"
+        onclick="openMenu()"
+      >
+        <span class="material-symbols-outlined">menu</span>
+      </button>
+      <a href="../index.html" class="homebutton instatic">
+        <span class="material-symbols-outlined">home</span>
+        <p>Domů</p>
+      </a>
+    </div>
+
+    <div class="closed menu" id="menu">
+      <div class="links">
+        <a href="zavody.html">
+          <span class="material-symbols-outlined">sports_score</span>
+          <p>Závody</p>
+        </a>
+        <a href="2024.html">
+          <span class="material-symbols-outlined">calendar_today</span>
+          <p>Sezóna 2024</p>
+        </a>
+      </div>
+
+      <div class="linksmid1">
+        <p class="menutext">Závody</p>
+        <a href="monza.html">
+          <span class="fi fi-it"></span>
+          <p>Monza</p>
+        </a>
+        <a href="spa.html">
+          <span class="fi fi-be"></span>
+          <p>Spa Francorshamp</p> </a
+        ><a href="monaco.html">
+          <span class="fi fi-mc"></span>
+          <p>Monaco</p>
+        </a>
+      </div>
+
+      <div class="linksmid2">
+        <p class="menutext">Piloti</p>
+        <a href="max.html">
+          <span class="fi fi-nl"></span>
+          <p>Max Verstappen</p> </a
+        ><a href="lando.html">
+          <span class="fi fi-gb"></span>
+          <p>Lando Norris</p> </a
+        ><a href="leclerc.html">
+          <span class="fi fi-mc"></span>
+          <p>Charles Leclerc</p>
+        </a>
+      </div>
+
+      <div class="links2">
+        <p class="menutext">Ostatní</p>
+        <a href="https://github.com/alechunder01/pitline">
+          <span class="material-symbols-outlined">docs</span>
+          <p>GitHub repositář</p>
+        </a>
+        <a href="onas.html">
+          <span class="material-symbols-outlined">account_circle</span>
+          <p>O mě</p>
+        </a>
+        <a href="gdpr.html">
+          <span class="material-symbols-outlined">policy_alert</span>
+          <p>GDPR</p>
+        </a>
+      </div>
+    </div>
+
+    <div class="grid">
+      <section class="homesection1">
+        <div class="upper">
+          <h1>O mně</h1>
+          <br />
+          <p>
+            Zde najdete informace a kontaktní údaje na mě, tvůrce této stránky.
+          </p>
+        </div>
+      </section>
+
+      <section class="kontakt">
+        <h2>Krátce o mně</h2>
+        <p>
+          Jmenuji se Alexandre Nicolas, jsem student střední školy a tato
+          stránka je mým projektem, který jsem vytvořil jako součást předmětu
+          Software a Webové aplikace.
+        </p>
+        <p>
+          Mým cílem bylo vytvořit jednoduchou a přehlednou stránku, která by
+          poskytovala informace o závodech F1, sezóně 2024 a oblíbených
+          pilotech. Také jsem chtěl si chtěl procvičit HTML, CSS a JavaScript,
+          abych se zlepšil v těchto technologiích a získal nové dovednosti.
+        </p>
+        <h2>Kontakt</h2>
+        <p>
+          Pokud máte jakékoli dotazy, připomínky nebo návrhy, neváhejte mě
+          kontaktovat na e-mailové adrese:
+          <a href="mailto:alexsnico08@gmail.com">alexsnico08@gmail.com</a>
+        </p>
+      </section>
+
+      <footer>
+        <div class="footer-left">
+          <a href="../index.html">Pitline.com</a>
+        </div>
+        <div class="footer-mid">
+          <a href="zavody.html">Závody</a>
+          <a href="2024.html">Sezóna 2024</a>
+        </div>
+        <div class="footer-right">
+          <p>
+            <span class="material-symbols-outlined">copyright</span>
+            Alexandre Nicolas, 2025
+          </p>
+          <a href="https://github.com/alechunder01/pitline">GitHub repositář</a>
+        </div>
+      </footer>
+    </div>
+    <script src="../scripts/menuopener.js"></script>
+  </body>
+</html>

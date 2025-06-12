@@ -188,3 +188,40 @@ h2 {
 .winner .right .stats {
     font-size: 1.2rem;
 }
+
+.winner .right .more {
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+    
+}
+
+.winner .right .more {
+    margin-top: 3vh;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+
+    background-color: white;
+    color: black;
+    border-radius: 10em;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    border: 1px solid black;
+    box-shadow: 0 0 0 0 black;
+}
+.winner .right .more:hover {
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 black;
+}
+
+.winner .right .more:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 black;
+}
